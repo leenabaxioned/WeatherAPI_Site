@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather API</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!--font-awesome link for icons-->
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="assets/vendor/font-awesome/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+    <link rel="stylesheet" media="screen" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <div class="wrapper">
+          <h1>Weather App</h1>
+          <div class="search">
+            <input
+              id="search-result"
+              type="text"
+              placeholder="Enter City Name"
+              spellcheck="false"
+              name="city"
+              required
+            />
+            <img src="assets/search.png" alt="search" class="searchbtn" />
+          </div>
+          <div class="err">
+            <p>Invalid city name</p>
+          </div>
+          <div class="weather">
+            <img src="assets/clouds.png" alt=" clouds" class="weather-icon" />
+            <h1 id="temp" class="temp"></h1>
+            <h2 class="city">Lagos, NG</h2>
+          </div>
+          <div class="weather-details">
+            <div class="humidity-details">
+              <img src="assets/humidity.png" alt="humidity" />
+              <div class="card-details">
+                <p class="humidity">66%</p>
+                <p>Humidity</p>
+              </div>
+            </div>
+            <div class="air-details">
+              <img src="assets/wind.png" alt="wind" />
+              <div class="card-details">
+                <p class="pressure">1013</p>
+                <p>Air pressure</p>
+              </div>
+            </div>
+          </div>
+          <div class="degree-button">
+            <button id="celcius" class="btn-item1">°C</button>
+            <button id="farenheit" class="btn-item2">°F</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
